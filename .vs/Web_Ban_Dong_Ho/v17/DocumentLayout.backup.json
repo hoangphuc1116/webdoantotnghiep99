@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\cartproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\cartproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\current.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\current.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\orderproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\orderproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\productvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\productvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\productrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\productrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\wishlistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\wishlistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|d:\\web b\u00E1n \u0111\u1ED3ng h\u1ED3\\web_ban_dong_ho\\models\\sex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8642B84-F348-4C5A-9F19-366AEBE14F86}|Web_Ban_Dong_Ho.csproj|solutionrelative:models\\sex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:13:51.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Current.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Current.cs",
+              "RelativeDocumentMoniker": "Models\\Current.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Current.cs",
+              "RelativeToolTip": "Models\\Current.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:47:09.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Color.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Color.cs",
+              "RelativeDocumentMoniker": "Models\\Color.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Color.cs",
+              "RelativeToolTip": "Models\\Color.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwA4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T16:19:04.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:41:47.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartProduct.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\CartProduct.cs",
+              "RelativeDocumentMoniker": "Models\\CartProduct.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\CartProduct.cs",
+              "RelativeToolTip": "Models\\CartProduct.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwBMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T16:05:34.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "Models\\Cart.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Cart.cs",
+              "RelativeToolTip": "Models\\Cart.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA+wBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:14:17.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Brand.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Brand.cs",
+              "RelativeDocumentMoniker": "Models\\Brand.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Brand.cs",
+              "RelativeToolTip": "Models\\Brand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:13:34.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderProduct.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\OrderProduct.cs",
+              "RelativeDocumentMoniker": "Models\\OrderProduct.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\OrderProduct.cs",
+              "RelativeToolTip": "Models\\OrderProduct.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T16:00:12.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "Models\\OrderStatus.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\OrderStatus.cs",
+              "RelativeToolTip": "Models\\OrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T16:00:28.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:12:46.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\ProductImage.cs",
+              "RelativeDocumentMoniker": "Models\\ProductImage.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\ProductImage.cs",
+              "RelativeToolTip": "Models\\ProductImage.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:57:44.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductVariant.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\ProductVariant.cs",
+              "RelativeDocumentMoniker": "Models\\ProductVariant.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\ProductVariant.cs",
+              "RelativeToolTip": "Models\\ProductVariant.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:58:08.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductRating.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\ProductRating.cs",
+              "RelativeDocumentMoniker": "Models\\ProductRating.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\ProductRating.cs",
+              "RelativeToolTip": "Models\\ProductRating.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:58:25.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:12:36.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WishlistItem.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\WishlistItem.cs",
+              "RelativeDocumentMoniker": "Models\\WishlistItem.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\WishlistItem.cs",
+              "RelativeToolTip": "Models\\WishlistItem.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:56:17.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Sex.cs",
+              "DocumentMoniker": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Sex.cs",
+              "RelativeDocumentMoniker": "Models\\Sex.cs",
+              "ToolTip": "D:\\Web b\u00E1n \u0111\u1ED3ng h\u1ED3\\Web_Ban_Dong_Ho\\Models\\Sex.cs",
+              "RelativeToolTip": "Models\\Sex.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:42:10.265Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
