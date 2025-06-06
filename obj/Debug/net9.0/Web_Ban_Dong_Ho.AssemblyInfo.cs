@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Web_Ban_Dong_Ho")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+151b5052b9970e6ba7cf7d04cbf3cbe307eeeb21")]
 [assembly: System.Reflection.AssemblyProductAttribute("Web_Ban_Dong_Ho")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Web_Ban_Dong_Ho")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Web bán đồng hồ\\Web_Ban_Dong_Ho\\Web_Ban_Dong_Ho.csproj": {}
+    "D:\\DATT\\webdoantotnghiep99\\Web_Ban_Dong_Ho.csproj": {}
   },
   "projects": {
-    "D:\\Web bán đồng hồ\\Web_Ban_Dong_Ho\\Web_Ban_Dong_Ho.csproj": {
+    "D:\\DATT\\webdoantotnghiep99\\Web_Ban_Dong_Ho.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Web bán đồng hồ\\Web_Ban_Dong_Ho\\Web_Ban_Dong_Ho.csproj",
+        "projectUniqueName": "D:\\DATT\\webdoantotnghiep99\\Web_Ban_Dong_Ho.csproj",
         "projectName": "Web_Ban_Dong_Ho",
-        "projectPath": "D:\\Web bán đồng hồ\\Web_Ban_Dong_Ho\\Web_Ban_Dong_Ho.csproj",
-        "packagesPath": "C:\\Users\\adim\\.nuget\\packages\\",
-        "outputPath": "D:\\Web bán đồng hồ\\Web_Ban_Dong_Ho\\obj\\",
+        "projectPath": "D:\\DATT\\webdoantotnghiep99\\Web_Ban_Dong_Ho.csproj",
+        "packagesPath": "C:\\Users\\Hoàng Phúc\\.nuget\\packages\\",
+        "outputPath": "D:\\DATT\\webdoantotnghiep99\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\adim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hoàng Phúc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -42,9 +42,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
