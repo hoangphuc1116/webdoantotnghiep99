@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Web_Ban_Dong_Ho/1.0.0": {
+        "runtime": {
+          "Web_Ban_Dong_Ho.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Web_Ban_Dong_Ho/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

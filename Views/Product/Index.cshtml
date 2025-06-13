@@ -1,0 +1,351 @@
+﻿@{
+    ViewData["Title"] = "Sản phẩm";
+}
+@model Web_Ban_Dong_Ho.Models.ViewModels.PagedProductListVM
+@using System.Globalization
+<!-- ...:::: Start Breadcrumb Section:::... -->
+<div class="breadcrumb-section breadcrumb-bg-color--golden">
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="breadcrumb-title">Sản Phẩm</h3>
+                    <div class="breadcrumb-nav breadcrumb-nav-color--black breadcrumb-nav-hover-color--golden">
+                        <nav aria-label="breadcrumb">
+                            <ul>
+                                <li><a asp-controller="Home" asp-action="Index">Trang Chủ</a></li>
+                                <li class="active" aria-current="page">Sản Phẩm</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- ...:::: End Breadcrumb Section:::... -->
+<!-- ...:::: Start Shop Section:::... -->
+<div class="shop-section">
+    <div class="container">
+        <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-lg-3">
+                <form method="get" asp-controller="Product" asp-action="Index">
+                    <div class="sidebar-single-widget">
+                        <h6 class="sidebar-title">Tìm kiếm</h6>
+                        <div class="default-search-style d-flex">
+                            @* <form method="get" asp-controller="Product" asp-action="ProductList">  *@
+                            <input class="default-search-style-input-box" type="search" placeholder="Tìm kiếm..." name="search">
+                            <button class="default-search-style-input-btn" type="submit"><i class="fa fa-search"></i></button>
+                            @* </form>  *@
+
+                        </div>
+                    </div>
+                    @await Component.InvokeAsync("MenuBrand")
+
+
+                    <div class="sidebar-single-widget">
+                        <h6 class="sidebar-title">FILTER BY PRICE</h6>
+                        <div class="sidebar-content">
+                            <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 15%; width: 45%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 15%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 60%;"></span></div>
+                            <div class="filter-type-price">
+                                <label for="amount">Price range:</label>
+                                <div>
+                                    <input type="text" id="amount" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" id="filter-button" class="btn btn-md btn-golden mt-3">Lọc theo giá</button>
+
+                    @await Component.InvokeAsync("MenuCategory")
+
+                    <div>
+                        <button type="submit" class="btn btn-md btn-golden mt-3">Lọc</button>
+                    </div>
+
+                </form>
+
+                @*                 <div class="sidebar-single-widget">
+                    <h6 class="sidebar-title">Thương Hiệu</h6>
+                    <div class="sidebar-content">
+                        <div class="filter-type-select">
+                            <ul>
+                                <li>
+                                    <label class="checkbox-default" for="brakeParts">
+                                        <input type="checkbox" id="brakeParts">
+                                        <span>Rolex</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-default" for="accessories">
+                                        <input type="checkbox" id="accessories">
+                                        <span>Hublot</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-default" for="EngineParts">
+                                        <input type="checkbox" id="EngineParts">
+                                        <span>Curnon</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox-default" for="hermes">
+                                        <input type="checkbox" id="hermes">
+                                        <span>Omega</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- End Single Sidebar Widget --> *@
+            </div> <!-- End Sidebar Area -->
+            <div class="col-lg-9">
+                <!-- Start Shop Product Sorting Section -->
+                <div class="shop-sort-section">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Start Sort Wrapper Box -->
+                            <div class="sort-box d-flex justify-content-between align-items-md-center align-items-start flex-md-row flex-column"
+                                 data-aos="fade-up" data-aos-delay="0">
+                                <!-- Start Sort tab Button -->
+                            </div> <!-- Start Sort Wrapper Box -->
+                        </div>
+                    </div>
+                </div> <!-- End Section Content -->
+                <!-- Start Tab Wrapper -->
+                <div class="sort-product-tab-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tab-content tab-animate-zoom">
+                                    <!-- Start List View Product -->
+                                    <div class="tab-pane active show sort-layout-single" id="layout-list">
+                                        <div class="row">
+                                            @foreach (var item in Model.Products)
+                                            {
+                                                <div class="col-12">
+                                                    <!-- Start Product Defautlt Single -->
+                                                    <div class="product-list-single product-color--golden"
+                                                         data-aos="fade-up" data-aos-delay="0">
+                                                        <a asp-controller="Product" asp-action="ProductDetail" asp-route-slug="@item.Slug" class="product-list-img-link">
+                                                            <img class="img-fluid" src="@Url.Content("~/Images/" + item.Image)"
+                                                                 alt="" style="width: 400px; height: 300px; object-fit: cover">
+                                                        </a>
+                                                        <div class="product-list-content">
+                                                            <h5 class="product-list-link">
+                                                                <a>
+                                                                    @item.ProductName
+                                                                </a>
+                                                            </h5>
+                                                            <ul class="review-star">
+                                                                @{
+                                                                    bool hasHalfStar = (item.ProductRating - (int)item.ProductRating) >= 0.4;
+
+                                                                }
+                                                                @if (item.ProductRating == 0)
+                                                                {
+                                                                    for (int i = 1; i <= 5; i++)
+                                                                    {
+                                                                        <li class="fill"><i class="ion-android-star"></i></li>
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+                                                                    @for (int i = 1; i <= (int)item.ProductRating; i++)
+                                                                    {
+                                                                        <li class="fill"><i class="ion-android-star"></i></li>
+                                                                    }
+
+                                                                    {
+                                                                        if ((int)item.ProductRating < 5)
+                                                                        {
+                                                                            if (hasHalfStar)
+                                                                            {
+                                                                                <li class="half" style="color: #b19361"><i class="ion-android-star-half"></i></li>
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    for (int i = (int)item.ProductRating + (hasHalfStar ? 1 : 0); i < 5; i++)
+                                                                    {
+                                                                        <li class="empty"><i class="ion-android-star"></i></li>
+                                                                    }
+                                                                }
+                                                            </ul>
+                                                            <span class="product-list-price">
+                                                                @String.Format(new CultureInfo("vi-VN"), "{0:C}", item.Price)
+                                                            </span>
+                                                            <p>
+                                                                @item.ShortDescription
+                                                            </p>
+                                                            <div class="product-action-icon-link-list">
+                                                                <a id="add-to-cart" data-slug="@item.Slug" data-quantity="1" class="btn btn-lg btn-black-default-hover add-to-cart">
+                                                                    Thêm vào giỏ
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- End Product Defautlt Single -->
+                                                </div>
+                                            }
+                                        </div>
+                                        <!-- End List View Product -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End Tab Wrapper -->
+                    <!-- Start Pagination -->
+                    <div class="page-pagination text-center" data-aos="fade-up" data-aos-delay="0">
+                        <ul>
+                            <!-- Liên kết trang trước -->
+                            @if (Model.CurrentPage > 1)
+                            {
+                                <li><a href="@Url.Action("Index", new { page = Model.CurrentPage - 1 })">&laquo; Trước</a></li>
+                            }
+
+                            <!-- Liên kết các trang -->
+                            @for (int i = 1; i <= Model.TotalPages; i++)
+                            {
+                                <li class="@(i == Model.CurrentPage ? "active" : "")">
+                                    <a href="@Url.Action("Index", new { page = i })">@i</a>
+                                </li>
+                            }
+
+                            <!-- Liên kết trang sau -->
+                            @if (Model.CurrentPage < Model.TotalPages)
+                            {
+                                <li><a href="@Url.Action("Index", new { page = Model.CurrentPage + 1 })">Sau &raquo;</a></li>
+                            }
+                        </ul>
+                    </div> <!-- End Pagination -->
+                </div> <!-- End Shop Product Sorting Section  -->
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+        $(function() {
+
+            var minPrice = 2000000;
+
+            var maxPrice = 10000000;
+
+
+            $("#slider-range").slider({
+
+                range: true,
+
+                min: minPrice,
+
+                max: maxPrice,
+
+                values: [minPrice, maxPrice],
+
+                slide: function(event, ui) {
+
+                    $("#amount").val(ui.values[0] + " - " + ui.values[1]);
+
+                }
+
+            });
+
+
+        $("#amount").val($("#slider-range").slider("values", 0) + " - " + $("#slider-range").slider("values", 1));
+
+        $("#filter-button").on("click", function() {
+
+            var values = $("#amount").val().split(" - ");
+
+            var minVal = parseInt(values[0]);
+
+            var maxVal = parseInt(values[1]);
+
+
+            console.log("Min Price: ", minVal);
+
+            console.log("Max Price: ", maxVal);
+
+
+            $('<input>').attr({
+
+                type: 'hidden',
+
+                name: 'minPrice',
+
+                value: minVal
+
+            }).appendTo('form');
+
+
+            $('<input>').attr({
+
+                type: 'hidden',
+
+                name: 'maxPrice',
+
+                value: maxVal
+
+            }).appendTo('form');
+
+            $('form').submit();
+
+        });
+
+        });
+    </script>
+    @* <script> *@
+    @*     $(document).ready(function () { *@
+    @*         $('.add-to-cart').click(function (e) { *@
+    @*             e.preventDefault(); *@
+    @*             var $this = $(this); *@
+    @*             var slug = $(this).data('slug'); *@
+    @*             var quantity = $(this).data('quantity'); *@
+    @* *@
+    @*             $.ajax({ *@
+    @*                 url: '@Url.Action("AddToCart", "Cart")', *@
+    @*                 type: 'POST', *@
+    @*                 data: { slug: slug, quantity: quantity }, *@
+    @*                 success: function (result) { *@
+    @*                     if (result.success) { *@
+    @*                         Toastify({ *@
+    @*                             text: result.message, *@
+    @*                             duration: 3000, *@
+    @*                             close: true, *@
+    @*                             stopOnFocus: true, *@
+    @*                             gravity: "top", *@
+    @*                             position: "right", *@
+    @*                             style: { *@
+    @*                                 background: "#5cb85c", *@
+    @*                             } *@
+    @*                         }).showToast(); *@
+    @*                     } else { *@
+    @*                         Toastify({ *@
+    @*                             text: result.message, *@
+    @*                             duration: 2000, *@
+    @*                             close: true, *@
+    @*                             gravity: "top", *@
+    @*                             position: "right", *@
+    @*                             style: { *@
+    @*                                 background: "#FF0000" *@
+    @*                             } *@
+    @*                         }).showToast(); *@
+    @*                     } *@
+    @*                 }, *@
+    @*                 error: function () { *@
+    @*                     Toastify({ *@
+    @*                         text: 'Có lỗi xảy ra khi thêm sản phẩm vào giỏ hàng.', *@
+    @*                         duration: 2000, *@
+    @*                         close: true, *@
+    @*                         gravity: "top", *@
+    @*                         position: "right", *@
+    @*                         style: { *@
+    @*                             background: "#FF0000", *@
+    @*                         } *@
+    @*                     }).showToast(); *@
+    @*                 } *@
+    @*             }); *@
+    @*         }); *@
+    @*     }); *@
+    @* </script> *@
+}

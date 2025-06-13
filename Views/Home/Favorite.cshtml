@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Yêu thích";
+}
+<!-- ...:::: Start Breadcrumb Section:::... -->
+<div class="breadcrumb-section breadcrumb-bg-color--golden">
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="breadcrumb-title">Yêu Thích</h3>
+                    <div class="breadcrumb-nav breadcrumb-nav-color--black breadcrumb-nav-hover-color--golden">
+                        <nav aria-label="breadcrumb">
+                            <ul>
+                                <li><a asp-controller="Home" asp-action="index">Trang Chủ</a></li>
+                                <li class="active" aria-current="page">Yêu Thích</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- ...:::: End Breadcrumb Section:::... -->
+<!-- ...:::: Start Wishlist Section:::... -->
+<div class="wishlist-section">
+    <!-- Start Cart Table -->
+    <div class="wishlish-table-wrapper" data-aos="fade-up" data-aos-delay="0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="table_desc">
+                        <div class="table_page table-responsive">
+                            <table>
+                                <!-- Start Wishlist Table Head -->
+                                <thead>
+                                    <tr>
+                                        <th class="product_thumb">Hình ảnh</th>
+                                        <th class="product_name">Sản phẩm</th>
+                                        <th class="product-price">Giá</th>
+                                        <th class="product_addcart"></th>
+                                        <th class="product_remove"></th>
+
+                                    </tr>
+                                </thead> <!-- End Cart Table Head -->
+                                <tbody>
+                                    <!-- Start Wishlist Single Item-->
+                                    <tr>
+
+                                        <td class="product_thumb">
+                                            <a href="product-details-default.html">
+                                                <img src="~/images/Curnon Kashmir.png"
+                                                     alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product_name">
+                                            <a href="product-details-default.html">
+                                                Đồng hồ Curnon Kashmir
+                                            </a>
+                                        </td>
+                                        <td class="product-price">2.159.000₫</td>
+                                        <td class="product_addcart">
+                                            <a href="#" class="btn btn-md btn-golden">
+                                                Thêm vào giỏ
+
+                                            </a>
+                                        </td>
+                                        <td class="product_remove">
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End Cart Table -->
+</div> <!-- ...:::: End Wishlist Section:::... -->

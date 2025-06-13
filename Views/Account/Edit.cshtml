@@ -1,0 +1,123 @@
+﻿@model Web_Ban_Dong_Ho.Models.ViewModels.CustomerVM
+@{
+    ViewData["Title"] = "Thông tin tài khoản";
+}
+
+<!-- ...:::: Start Breadcrumb Section:::... -->
+<div class="breadcrumb-section breadcrumb-bg-color--golden">
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="breadcrumb-title">Tài Khoản Của Tôi</h3>
+                    <div class="breadcrumb-nav breadcrumb-nav-color--black breadcrumb-nav-hover-color--golden">
+                        <nav aria-label="breadcrumb">
+                            <ul>
+                                <li><a asp-controller="Home" asp-action="Index">Trang Chủ</a></li>
+                                <li class="active" aria-current="page">Cập nhật thông tin</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ...:::: End Breadcrumb Section:::... -->
+<!-- ...:::: Start Account Dashboard Section:::... -->
+<div class="account-dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <!-- Nav tabs -->
+                <div class="dashboard_tab_button" data-aos="fade-up" data-aos-delay="0">
+                    <ul role="tablist" class="nav flex-column dashboard-list">
+                        <li>
+                            <a asp-controller="Account" asp-action="Order"
+                               class="nav-link btn btn-block btn-md btn-black-default-hover">Đơn hàng</a>
+                        </li>
+                        <li>
+                            <a asp-controller="Account" asp-action="Index"
+                               class="nav-link btn btn-block btn-md btn-black-default-hover active">Thông tin cá nhân</a>
+                        </li>
+                        <li>
+                            <a asp-controller="Account" asp-action="Favorite"
+                               class="nav-link btn btn-block btn-md btn-black-default-hover">Yêu Thích</a>
+                        </li>
+                        <li>
+                            <a asp-controller="Account" asp-action="Logout"
+                               class="nav-link btn btn-block btn-md btn-black-default-hover">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-9 col-lg-9">
+                <!-- Tab panes -->
+                <div class="tab-content dashboard_content" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tab-pane fade show active">
+                        <h3>Thông tin cá nhân</h3>
+                        <div class="login">
+                            <div class="login_form_container">
+                                <div class="account_login_form">
+                                    <form asp-action="Edit" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <div class="default-form-box input-radio">
+                                            <label>Giới tính</label>
+                                            <br />
+                                            <span class="custom-radio">
+                                                <input type="radio" value="true" asp-for="Gender"> Nam
+                                            </span>
+                                            <span class="custom-radio">
+                                                <input type="radio" value="false" asp-for="Gender"> Nữ
+                                            </span>
+                                        </div>
+                                        <br>
+                                        <div class="default-form-box mb-20">
+                                            <label asp-for="DisplayName">Tên hiển thị</label>
+                                            <input type="text" asp-for="DisplayName" value="@Model.DisplayName">
+                                            <span asp-validation-for="DisplayName" class="text-danger"></span>
+                                        </div>
+                                        <div class="default-form-box mb-20">
+                                            <label asp-for="FullName">Họ tên</label>
+                                            <input type="text" asp-for="FullName" value="@Model.FullName">
+                                            <span asp-validation-for="FullName" class="text-danger"></span>
+                                        </div>
+                                        <div class="default-form-box mb-20">
+                                            <label asp-for="Email">Email</label>
+                                            <input type="email" asp-for="Email" value="@Model.Email">
+                                            <span asp-validation-for="Email" class="text-danger"></span>
+                                        </div>
+                                        <div class="default-form-box mb-20">
+                                            <label asp-for="Phone">Số điện thoại</label>
+                                            <input type="text" asp-for="Phone" value="@Model.Phone">
+                                            <span asp-validation-for="Phone" class="text-danger"></span>
+                                        </div>
+                                        <div class="default-form-box mb-20">
+                                            <label asp-for="Address">Địa chỉ</label>
+                                            <input type="text" asp-for="Address" value="@Model.Address">
+                                            <span asp-validation-for="Address" class="text-danger"></span>
+                                        </div>
+                                        <div class="default-form-box mb-20">
+                                            <label asp-for="Dob">Ngày sinh</label>
+                                            <input type="date" asp-for="Dob" value="@(Model.Dob.HasValue? Model.Dob.Value.ToString("yyyy-MM-dd") : "")" />
+                                            <span asp-validation-for="Dob" class="text-danger"></span>
+                                        </div>
+                                        <br>
+                                        <div class="save_button mt-3">
+                                            <button class="btn btn-md btn-black-default-hover" type="submit">
+                                                Lưu thay đổi
+                                            </button>
+                                            <button class="btn btn-md btn-black-default-hover" asp-controller="Account" asp-action="Index">
+                                                Quay lại
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- ...:::: End Account Dashboard Section:::... -->

@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Giới thiệu";
+}
+@using Web_Ban_Dong_Ho.Models.ViewModels
+@model AboutVM
+<!-- ...:::: Start Breadcrumb Section:::... -->
+<div class="breadcrumb-section breadcrumb-bg-color--golden">
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="breadcrumb-title">GIỚI THIỆU</h3>
+                    <div class="breadcrumb-nav breadcrumb-nav-color--black breadcrumb-nav-hover-color--golden">
+                        <nav aria-label="breadcrumb">
+                            <ul>
+                                <li><a asp-action="Index" asp-controller="Home">Trang Chủ</a></li>
+                                <li class="active" aria-current="page">Giới Thiệu</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- ...:::: End Breadcrumb Section:::... -->
+<!-- ...::::Start About Us Center Section:::... -->
+<div class="faq-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="faq-content" data-aos="fade-up" data-aos-delay="0">
+                    <h5 class="title">
+                        1. Về chúng tôi
+                    </h5>
+                    <p>
+                        @Html.Raw(Model.About.Content)
+                    </p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="faq-content" data-aos="fade-up" data-aos-delay="0">
+                    <h5 class="title">
+                        2. Cửa hàng của chúng tôi
+                    </h5>
+                    <p>
+                        Địa chỉ: @Model.About.Address
+                        <br />
+                        Điện thoại: @Model.About.Phone
+                        <br />
+                        Email: @Model.About.Email
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-wrapper">
+            <div class="row">
+                <div class="col-12">
+                    <div class="faq-content" data-aos="fade-up" data-aos-delay="0">
+                        <h5 class="title">
+                            3. Chính sách của chúng tôi
+                        </h5>
+                    </div>
+                    <div class="faq-accordian">
+                        @foreach (var policy in Model.Policies)
+                        {
+                            <div class="faq-accordian-single-item" data-aos="fade-up" data-aos-delay="0">
+                                <input id="item-@policy.Id" name="accordian-item" type="radio" checked="">
+                                <label for="item-@policy.Id">@policy.Title</label>
+                                <div class="item-content">
+                                    <p>
+                                        @policy.Content
+                                    </p>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- ...::::End  About Us Center Section:::... -->

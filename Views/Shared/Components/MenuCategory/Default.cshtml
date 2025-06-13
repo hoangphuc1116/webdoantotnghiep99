@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Web_Ban_Dong_Ho.Models.ViewModels.MenuCategoryVM>
+@* <!-- Start Single Sidebar Widget -->
+<div class="sidebar-single-widget">
+    <h6 class="sidebar-title">LOẠI</h6>
+    <div class="sidebar-content">
+        <ul class="sidebar-menu">
+            @foreach (var item in Model)
+            {
+                <li>
+                    <a asp-controller="Product" asp-action="ProductList" asp-route-categories="@item.Slug">
+                        @item.CategoryName
+                    </a>
+                </li>
+
+            }
+        </ul>
+    </div>
+</div> <!-- End Single Sidebar Widget --> *@
+<div class="sidebar-single-widget">
+    <h6 class="sidebar-title">Loại</h6>
+    <div class="nice-select country_option wide" tabindex="0">
+        <span class="current">Tất cả loại</span>
+        <ul class="list">
+            <!-- Thêm lựa chọn "Tất cả thương hiệu" -->
+            <li data-value="" class="option">Tất cả loại</li>
+
+            @foreach (var item in Model)
+            {
+                <li data-value="@item.Slug" class="option">
+                    @item.CategoryName
+                </li>
+            }
+        </ul>
+    </div>
+    <input type="hidden" name="categories" id="selectedCategory" value="">
+</div>
+<script>
+    document.querySelectorAll('.country_option .option').forEach(option => {
+        option.addEventListener('click', function() {
+            document.getElementById('selectedCategory').value = this.getAttribute('data-value');
+            document.querySelector('.current').textContent = this.textContent; // Cập nhật tiêu đề
+        });
+    });
+</script>

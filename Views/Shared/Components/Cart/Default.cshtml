@@ -1,0 +1,10 @@
+﻿@model Web_Ban_Dong_Ho.Models.ViewModels.CartVM
+<li>
+    <a asp-controller="cart" asp-action="cart">
+        <i class="icon-bag"></i>
+        <span>@Model.Quantity</span>
+        <i class=" d-line p-3 icon-wallet" style="letter-spacing: 0px"></i>
+        <strong><p class="d-inline" style="letter-spacing: 0px">@Model.Total</p></strong>
+
+    </a>
+</li>

@@ -1,0 +1,146 @@
+﻿@{
+    ViewData["Title"] = "Thanh toán";
+}
+@model Web_Ban_Dong_Ho.Models.ViewModels.CheckoutValidationVM
+
+<!-- Start Breadcrumb -->
+<div class="breadcrumb-section breadcrumb-bg-color--golden">
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="breadcrumb-title">Thanh Toán</h3>
+                    <div class="breadcrumb-nav breadcrumb-nav-color--black breadcrumb-nav-hover-color--golden">
+                        <nav aria-label="breadcrumb">
+                            <ul>
+                                <li><a asp-controller="Home" asp-action="Index">Trang Chủ</a></li>
+                                <li><a asp-controller="Cart" asp-action="Cart">Giỏ Hàng</a></li>
+                                <li class="active" aria-current="page">Thanh Toán</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Checkout Section -->
+<div class="checkout-section">
+    <div class="container">
+        <div class="checkout_form">
+            <div class="row">
+
+                <!-- Customer Info -->
+                <div class="col-lg-6 col-md-6">
+                    <form method="post" asp-action="Checkout">
+                        <h3>CHI TIẾT ĐƠN HÀNG</h3>
+
+                        @* FullName *@
+                        <div class="default-form-box">
+                            <label>Họ Tên <span>*</span></label>
+                            <input asp-for="CheckoutVM.FullName" class="form-control" required />
+                            <span asp-validation-for="CheckoutVM.FullName" class="text-danger"></span>
+                        </div>
+
+                        @* Phone *@
+                        <div class="default-form-box">
+                            <label>Số điện thoại</label>
+                            <input asp-for="CheckoutVM.Phone" class="form-control" required />
+                            <span asp-validation-for="CheckoutVM.Phone" class="text-danger"></span>
+                        </div>
+
+                        @* Email *@
+                        <div class="default-form-box">
+                            <label>Email</label>
+                            <input asp-for="CheckoutVM.Email" class="form-control" required />
+                            <span asp-validation-for="CheckoutVM.Email" class="text-danger"></span>
+                        </div>
+
+                        @* Address *@
+                        <div class="default-form-box">
+                            <label>Địa chỉ <span>*</span></label>
+                            <input asp-for="CheckoutVM.Address" class="form-control" required />
+                            <span asp-validation-for="CheckoutVM.Address" class="text-danger"></span>
+                        </div>
+
+                        @* Location Fields *@
+                        <div class="default-form-box">
+                            <label>Tỉnh / Thành phố <span>*</span></label>
+                            <input asp-for="CheckoutVM.Province" class="form-control" required />
+                            <span asp-validation-for="CheckoutVM.Province" class="text-danger"></span>
+                        </div>
+
+                        <div class="default-form-box">
+                            <label>Quận / Huyện <span>*</span></label>
+                            <input asp-for="CheckoutVM.District" class="form-control" required />
+                            <span asp-validation-for="CheckoutVM.District" class="text-danger"></span>
+                        </div>
+
+                        <div class="default-form-box">
+                            <label>Phường / Xã <span>*</span></label>
+                            <input asp-for="CheckoutVM.Ward" class="form-control" required />
+                            <span asp-validation-for="CheckoutVM.Ward" class="text-danger"></span>
+                        </div>
+
+                        <h3 class="mt-4">Phương thức thanh toán</h3>
+
+                        <div class="form-check">
+                            <input type="radio" asp-for="CheckoutVM.PaymentMethod" value="COD" class="form-check-input" required />
+                            <label class="form-check-label">Thanh toán khi nhận hàng (COD)</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" asp-for="CheckoutVM.PaymentMethod" value="Momo" class="form-check-input" />
+                            <label class="form-check-label">Ví Momo</label>
+                        </div>
+
+                        <input type="hidden" name="TotalAmount" value="@(Model.CartRequest?.Sum(x => x.Quantity * x.Price) ?? 0)" />
+
+                        <div class="order_button pt-3">
+                            <button class="btn btn-md btn-black-default-hover" type="submit">Thanh toán</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="col-lg-6 col-md-6">
+                    <h3>ĐƠN HÀNG CỦA BẠN</h3>
+                    <div class="order_table table-responsive">
+                        <table>
+                            <thead>
+                                <tr><th>Sản phẩm</th><th>Tổng</th></tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.CartRequest?.Any() ?? false)
+                                {
+                                    foreach (var item in Model.CartRequest)
+                                    {
+                                        <tr>
+                                            <td>@item.ProductName <strong>× @item.Quantity</strong></td>
+                                            <td>@string.Format("{0:C}", item.Quantity * item.Price)</td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr><td colspan="2">Không có sản phẩm trong giỏ hàng.</td></tr>
+                                }
+                            </tbody>
+                            <tfoot>
+                                @if (Model.CartRequest?.Any() ?? false)
+                                {
+                                    <tr>
+                                        <th>Tổng giỏ hàng</th>
+                                        <td>@string.Format("{0:C}", Model.CartRequest.Sum(x => x.Quantity * x.Price))</td>
+                                    </tr>
+                                }
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
